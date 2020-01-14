@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Online BabyShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+
+
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!--header-->
+        <header>
+
+            <!--nav-->
+            <div class="row">
+
+
+                <nav class="navbar navbar-inverse">
+                    <div class="col-lg-8">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Arwa Lokat</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class=" nav navbar-nav mr-auto">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+
+        <!--container-->
+        <content>
+            <div class="container-fluid">
+                <div class="row">
+                    <!--main-->
+                    <div class="col-md-8 ">
+
+                      
+                            <main role="main" class="pb-3">
+                                @RenderBody()
+                            </main>
+                   
+
+
+
+
+                        </div>
+
+                        <aside>
+
+                            <div class="row>">
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 ">
+                                    <h3>Some Links</h3>
+                                    <p>Lorem ipsum dolor sit ame.</p>
+                                    <ul class="nav nav-bar">
+                                        <li class="nav-item">
+                                            <a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle mr-4 " data-target="#submenu-1">
+                                                Pages
+                                                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+
+                                            </a>
+                                            <ul class="nav nav-bar collapse" id="submenu-1">
+                                                <li>
+                                                    <a class="nav-link" area-expanded="false" href="#">Page 1</a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="#">Page 2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link" href="#">Page 3</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled" href="#">Disabled</a>
+                                        </li>
+                                    </ul>
+                                    <hr class="d-sm-none">
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+                        </aside>
+
+
+
+                    </div>
+
+            </div>
+
+            <!--footer-->
+
+            <footer>
+
+                <!--nav-->
+                <div class="row align-items-center">
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <div class="col-lg-10">
+                                <a class="navbar-brand" href="#">Copyright@Arwa Lokat</a>
+                            </div>
+                            <div class="col-lg-push-1 col-sm-1">
+                                <a href="#" target="_top" class="navbar-brand">Top</a>
+                            </div>
+
+
+                        </div>
+                    </nav>
+                </div>
+            </footer>
+
+        </content>
+
+
+
+
+
+    </div><!--/end of wrapper-->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+
+
+
+
+</html>
